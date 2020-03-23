@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Hensa";
+    src: url('./Hensa.ttf') format('OpenType');
+}
+
+@font-face{
+    font-family: "Laksaman";
+    src: url('./Laksaman.ttf') format('TrueType');
+}
+
+
+body {
+    font-family: "Laksaman", sans-serif;;
+    background: no-repeat bottom/100% url('./background.png');
+    background-attachment: fixed;
+    background-position: 40% 75%;
+    color: rgb(43, 45, 53);
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    font-family: 'Hensa', Arial, Helvetica, sans-serif;
+    color: rgb(43, 45, 53);
+}
+
+@media (min-width: 768px) {
+    body {
+        background: no-repeat bottom/100% url('./background-laptop.png');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
