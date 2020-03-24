@@ -11,7 +11,7 @@
 
 body {
     font-family: "Laksaman", sans-serif;;
-    background: no-repeat bottom/100% url('./background.png');
+    background: no-repeat bottom/100% url('./background-s.png');
     background-attachment: fixed;
     background-position: 40% 75%;
     color: rgb(43, 45, 53);
@@ -29,5 +29,12 @@ body {
         background: no-repeat bottom/100% url('./background-laptop.png');
         background-attachment: fixed;
         background-size: cover;
+    }
+}
+
+@media (min-height: 620px) and (max-width: 767px) {
+    body {
+        background: no-repeat bottom/100% url('./background-long.png');
+        background-attachment: fixed;
     }
 }

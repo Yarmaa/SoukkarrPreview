@@ -1,3 +1,10 @@
+<script>
+export const username = "Maryam";
+function go() {
+	window.location = "about";
+}
+</script>
+
 <svelte:head>
 	<title>🍭Soukkar - Find the sugar🍭 </title>
 </svelte:head>
@@ -9,17 +16,16 @@
 			<a href="./#" class="button">Scanner un produit</a>
 		</div>
 		<div class="bloc-sep"><div class="sep"></div>ou<div class="sep"></div></div> -->
-		<div>
+		<form>
 			<p>Tapez le code barre du produit à analyser</p>
-			<input type="text" placeholder="Ex: 0737628064502"><br>
-			<a href="./#" class="button">GO</a>
-		</div>
+			<input type="number" placeholder="Ex: 0737628064502" id="inputCodeBarre"><br>
+			<button href="./#" class="button" type="submit" on:click|preventDefault={go}>GO</button>
+		</form>
 	</section>
 </main>
 
 <style>
 	main {
-		background-color: rgb(243, 237, 218);
 		text-align: center;
 		font-size: 1.2em;
 		font-family: "Laksaman", sans-serif;
@@ -29,7 +35,7 @@
 		padding: 10%;
 	}
 
-	div {
+	form {
 		margin-top: 5%;
 	}
 
@@ -67,7 +73,7 @@
 		font-size: 1em;
 	}
 
-	.button {
+	button[type='submit'] {
 		box-shadow: 2px 2px rgba(43, 45, 53, 0.219);
 		color: rgb(249, 249, 249);
 		font-size: 1.3em;
@@ -76,6 +82,7 @@
 		line-height: 0;
 		font-weight: 500;
 		margin: 2%;
+		font-family: "Laksaman", sans-serif;
 	}
 
 	@media (max-width: 320px) {
@@ -106,8 +113,35 @@
 			font-size: 1.2em;
 		}
 
-		.button {
+		button[type='submit'] {
 			padding: 3.5%;
+		}
+	}
+
+	@media (min-width: 1300px) {
+		section {
+			padding: 2%;
+		}
+
+		#logo {
+			width: 20%;
+			margin-bottom: 1%;
+			margin-top: 2%;
+		}
+
+		input {
+			padding: 2%;
+			margin: 2%;
+			width: 40%;
+		}
+
+		p {
+			font-size: 1.2em;
+		}
+
+		button[type='submit'] {
+			margin-top: 0;
+			padding: 2%;
 		}
 	}
 

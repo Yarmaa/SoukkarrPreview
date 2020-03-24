@@ -68,8 +68,8 @@ input[type='reset']:focus,
 input[type='reset']:hover,
 input[type='submit']:focus,
 input[type='submit']:hover {
-  background-color: #606c76;
-  border-color: #606c76;
+  background-color: rgb(43, 45, 53);
+  border-color: rgb(43, 45, 53);
   color: #fff;
   outline: 0;
 }
@@ -115,8 +115,8 @@ input[type='reset'].button-outline:hover,
 input[type='submit'].button-outline:focus,
 input[type='submit'].button-outline:hover {
   background-color: transparent;
-  border-color: #606c76;
-  color: #606c76;
+  border-color: rgb(43, 45, 53);
+  color: rgb(43, 45, 53);
 }
 
 .button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
@@ -153,7 +153,7 @@ input[type='submit'].button-clear:focus,
 input[type='submit'].button-clear:hover {
   background-color: transparent;
   border-color: transparent;
-  color: #606c76;
+  color: rgb(43, 45, 53);
 }
 
 .button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
