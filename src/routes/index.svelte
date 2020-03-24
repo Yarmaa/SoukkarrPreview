@@ -124,7 +124,7 @@ function go() {
 		}
 
 		#logo {
-			width: 20%;
+			width: 10%;
 			margin-bottom: 1%;
 			margin-top: 2%;
 		}
@@ -132,7 +132,7 @@ function go() {
 		input {
 			padding: 2%;
 			margin: 2%;
-			width: 40%;
+			width: 25%;
 		}
 
 		p {
@@ -141,7 +141,7 @@ function go() {
 
 		button[type='submit'] {
 			margin-top: 0;
-			padding: 2%;
+			padding: 5px;
 		}
 	}
 
